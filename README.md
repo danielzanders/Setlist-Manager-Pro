@@ -14,17 +14,31 @@ Ein leistungsstarkes Python-Tool für Konzertliebhaber, um das eigene Konzertarc
 
 ---
 
-## 🛠 Installation
+## 🛠 Installation & Start
 
-1.  **Repository klonen oder herunterladen.**
-2.  **Abhängigkeiten installieren:**
-    ```bash
-    pip install -r requirements.txt
-    ```
-3.  **Programm starten:**
-    ```bash
-    python main.py
-    ```
+Es gibt zwei Möglichkeiten, das Programm zu nutzen:
+
+### Option A: Für Anwender (Empfohlen)
+1. Lade die neueste `SetlistManagerPro.exe` aus den **[Releases](../../releases)** herunter.
+2. Starte die Datei per Doppelklick.
+3. **Hinweis zu Windows:** Da die App nicht digital signiert ist, erscheint beim ersten Start evtl. der blaue Warnbildschirm ("Der Computer wurde durch Windows geschützt").
+   * Klicke auf **"Weitere Informationen"**.
+   * Klicke auf den Button **"Trotzdem ausführen"**.
+
+### Option B: Für Entwickler (Python benötigt)
+1. Repository klonen: `git clone https://github.com/DEIN_NAME/Setlist-Manager-Pro.git`
+2. Abhängigkeiten installieren: `pip install -r requirements.txt`
+3. Starten: `python main.py`
+
+---
+
+## ❓ Problembehandlung (FAQ)
+
+**Frage: Warum erkennt Windows die App als Gefahr an?**
+Antwort: Windows SmartScreen blockiert standardmäßig alle ausführbaren Dateien, die keinen registrierten (und kostenpflichtigen) Herausgeber-Stempel haben. Da dies ein Open-Source-Projekt ist, wurde auf ein solches Zertifikat verzichtet. Der Quellcode ist hier auf GitHub jederzeit für jeden einsehbar.
+
+**Frage: Die App startet nicht oder stürzt beim Excel-Lesen ab?**
+Antwort: Stelle sicher, dass die Excel-Datei während des Sync-Vorgangs nicht in einem anderen Programm (z.B. Excel selbst) geöffnet ist.
 
 ---
 
@@ -53,5 +67,6 @@ Deine Excel-Tabelle sollte mindestens folgende Spalten enthalten:
 * **Datum** (im Format TT.MM.JJJJ oder ähnlich)
 
 ---
+
 
 **Entwickelt für Musik-Fans, die ihre Live-Erlebnisse digital archivieren wollen.** 🎸
